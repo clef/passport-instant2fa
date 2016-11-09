@@ -1,0 +1,50 @@
+{
+  "name": "passport-instant2fa",
+  "version": "0.0.1",
+  "description": "Two-factor authentication strategy for Passport using Instant2FA.",
+  "keywords": [
+    "passport",
+    "two-factor",
+    "instant2fa",
+    "otp",
+    "oath",
+    "totp",
+    "auth",
+    "authn",
+    "authentication"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clef/passport-instant2fa.git"
+  },
+  "bugs": {
+    "url": "http://github.com/clef/passport-instant2fa/issues"
+  },
+  "author": {
+    "name": "Mark Hudnall",
+    "email": "mark@instant2fa.com",
+    "url": "https://instant2fa.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "notp": "2.0.x",
+    "passport-strategy": "1.0.0",
+    "pkginfo": "0.2.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=./lib node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
