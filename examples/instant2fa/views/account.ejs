@@ -1,0 +1,12 @@
+<% layout('layout') -%>
+<h3>Account settings</h3>
+
+<p>Username: <%= user.username %></p>
+<p>Email: <%= user.email %></p>
+
+<h3>2FA settings</h3>
+<script
+    class="instant2fa-page"
+    src="https://js.instant2fa.com/hosted.js"
+    data-uri="<%= url %>"
+></script>
