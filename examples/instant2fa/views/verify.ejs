@@ -1,0 +1,12 @@
+<% layout('layout') -%>
+<% if (message) { %>
+<p><%= message %></p>
+<% } %>
+
+<form action="/verify" method="POST">
+    <script
+        class="instant2fa-page"
+        src="https://js.instant2fa.com/hosted.js"
+        data-uri="<%= url %>"
+    ></script>
+</form>

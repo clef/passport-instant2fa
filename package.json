@@ -33,7 +33,7 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "notp": "2.0.x",
+    "instant2fa": "^1.0.1",
     "passport-strategy": "1.0.0",
     "pkginfo": "0.2.x"
   },
